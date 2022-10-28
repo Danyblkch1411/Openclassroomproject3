@@ -1,0 +1,116 @@
+/* Phone 767 */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    padding: 0px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100% ;
+    align-items: center;
+    gap: 30px;
+    // border: 2px solid blue ;
+  }
+
+
+  /* Section réservation */
+  .showTown {
+    // border: 2px solid blue ;
+    padding-bottom: 50px; }
+
+    .Restaurant__recto{
+      display:none;
+
+    }
+
+    .Menu {
+    
+       width: 100%;
+  
+   
+     }
+
+     .entréesPlatsDesserts__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+    }
+
+
+
+
+    .Menu__cardGroup {
+      flex-direction : column;
+      display: flex;
+      width: 100%;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    
+     .menuCard {
+      width: calc(100% / 1);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+    }
+
+
+
+
+      /* Section restaurants */
+    .Restaurants {
+      // border: 2px solid orange ;
+     padding-bottom: 50px; }
+
+    .Restaurants {
+      width: calc(90% / 2);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 8px;
+      background-color: $light-grey-color;
+      
+      box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+    } 
+
+  .Restaurants {
+    background-color: $light-grey-color;
+    width: 100%;
+  }
+
+
+  .Restaurants__group {
+    flex-direction : column;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+
+.Restaurant__card {
+    width: calc(100% / 1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    // border: 2px solid red;
+     border-radius: 14px;  
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+
+
+  .fonctionnement__resto-item {
+    width: 90%;
+  }
+
+
+}

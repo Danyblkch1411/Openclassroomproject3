@@ -1,0 +1,44 @@
+
+@mixin couleurPerso { 
+  /* Couleur de secours pour les vieux navigateurs */
+       background-color: #1c87c9;
+}
+
+@mixin dégradé($from, $to) { 
+  /* Couleur de secours pour les vieux navigateurs */
+  background-color: $to;
+  background-image: linear-gradient(to bottom, $from, $to);
+}
+
+
+
+
+.button {
+      // background-color: #1c87c9;
+      border: none;
+      color: white;
+      padding: 20px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      // background-color: rgb(173, 54, 186);
+      cursor: pointer;
+      border-radius: 14px;
+      @include dégradé($purple-color,$purple-dark-color); 
+    }
+
+    @mixin shadow($x, $y, $blur, $color) {
+      -webkit-box-shadow: $x $y $blur $color;
+      -moz-box-shadow:$x $y $blur $color; 
+      box-shadow: $x $y $blur $color; }
+
+   .button:hover  { 
+         @include dégradé(lighten($purple-color,10%), lighten($purple-dark-color,10%)); 
+        @include shadow(0, 5px, 5px, rgb(0, 0, 0,.5));
+ 
+    }
+       
+
+        
