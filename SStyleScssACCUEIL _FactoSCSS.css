@@ -1,0 +1,1790 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;1,200&display=swap"); /* Colors */
+/* purple color */
+/* pinky color */
+/* green color */
+/* black color */ /* footer */
+/* black color */ /* footer */
+/* white color */
+/* gris foncé  */ /* page resto */
+/* purple color */ /* bouton */
+/* purple */
+/* purple */
+/* green */
+@import url("http://fonts.cdnfonts.com/css/shrikhand");
+@import url("http://fonts.cdnfonts.com/css/roboto");
+/* PAS BESOIN */
+/* Colors */
+/* charte color */
+/* noir */
+/* Gris clair    eff0f1*/
+/* Font and typography */
+/* Font weight */
+/* z index */
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+}
+
+/*  !!!!!!!!!!!!! */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  !!!!!!!!!!!!! */
+/*  !!!!!!!!!!!!! */
+body {
+  background: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  !!!!!!!!!!!!! */
+.containerLoader {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+}
+
+.itemLoader {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.item1 {
+  background-color: #9356DC;
+  -webkit-animation: loader 20 0.3s alternate;
+          animation: loader 20 0.3s alternate;
+  /*
+  animation: loader;
+  animation-iteration-count: 20;
+  animation-direction: alternate;
+  animation-duration: 0.05s */
+}
+
+.item2 {
+  background-color: #FF79DA;
+  -webkit-animation: loader 20 0.3s 0.05s alternate;
+          animation: loader 20 0.3s 0.05s alternate;
+}
+
+.item3 {
+  background-color: #99E2D0;
+  -webkit-animation: loader 15 0.3s 0.1s alternate;
+          animation: loader 15 0.3s 0.1s alternate;
+}
+
+@-webkit-keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+/*  !!!!!!!!!!!!! */
+.affOhmyfood {
+  opacity: 0;
+  -webkit-animation: print;
+          animation: print;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/*  !!!!!!!!!!!!! */
+@-webkit-keyframes print {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes print {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*  !!!!!!!!!!!!! */
+header {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Axe X */
+}
+
+.header__logo, .header__logo-Menu {
+  Display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 90%;
+}
+
+.header__logo-Image {
+  width: 100%;
+  height: 80%;
+}
+
+.header__logo-Image img {
+  width: 150px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.header__image-resto {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-image: url("./Image/A_la_francaise.jpg");
+}
+
+header a {
+  padding-top: 10px;
+}
+
+.showTown {
+  /*===== Affichage de la ville  =====*/
+  /*  display: flex;
+   flex-direction: column;
+   justify-content : space-between;
+   align-items : center; 
+   padding-left: 3ppx;
+   padding-right: 3px;  */
+  /* Contener icon */
+  /* Input Town */
+}
+.showTown__cont {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  padding-left: 50px;
+  border: 2px solid red;
+  background-color: #eaeaea;
+}
+.showTown__cont-icon {
+  background-color: #eaeaea;
+  padding: 10px 12px;
+  border-radius: 10px 0 0 10px;
+}
+.showTown__cont-field {
+  border: none;
+  background-color: #eaeaea;
+  color: var(--container-color);
+  font-weight: var(--font-semibold);
+  padding-left: 10px;
+  height: 37px;
+}
+
+.Accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+  /*
+    &__Explore-Btn  {
+      display:block;
+      align-content: center;
+      background-color: $purple-color;
+    }
+
+
+    &__Explore-Btn a {
+      display:block;
+      width: 250px; 
+      line-height: 50px;
+      text-align:center;
+      background-color: rgb(173, 54, 186);
+      color:white;
+      border-radius: 50px;
+    }
+  */
+}
+.Accueil__Title {
+  text-align: center;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semibold);
+}
+.Accueil__SubTitle {
+  text-align: center;
+  font-size: var(--normal-font-size);
+  color: var(--text-color-light);
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 10px;
+  margin: 25px;
+  /* Liste Ul */
+}
+.fonctionnement__Title {
+  font-size: var(--h2-font-size);
+}
+.fonctionnement__Actions {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 15px;
+  width: 100%;
+}
+.fonctionnement__Actions li:hover {
+  background-color: #f5edff;
+}
+.fonctionnement__Actions li:hover .fonctionnement__resto-item--icon {
+  color: #9356dc;
+}
+.fonctionnement__resto-item--icon {
+  /* position: absolute;
+  top: -2px;
+  left: -4px; */
+  /*  background-color: $purple-color; */
+  padding: 10px;
+  border-radius: 50%;
+}
+.fonctionnement__resto-item--iconNumber {
+  /* position: absolute;
+  top: -2px;
+  left: -4px; */
+  background-color: #9356dc;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+.fonctionnement__resto--Icons {
+  display: flex;
+  gap: 10px;
+  /* width: 25%; */
+}
+.fonctionnement__resto--Icons:nth-child(1) {
+  margin-left: -20px;
+}
+
+/* ====================================================== */
+.fonctionnement__Actions-item {
+  display: flex;
+  align-items: baseline;
+  width: auto;
+  padding: 8px;
+  border: 1px solid var(--text-color-light);
+  border-radius: 14px;
+  gap: 10px;
+  background-color: #f6f6f6;
+}
+
+/*
+.fonctionnement__Actions-item li:hover {
+      background-color: $light_purple-color;
+     }
+
+
+    */
+/* Positionnement de l'icone par rapport au texte li */
+.fonctionnement__resto--icon {
+  background-color: var(--first-color-alt);
+  padding: 10px;
+  border-radius: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline; /* supprime le renvoi à la ligne balise div */
+}
+
+.fonctionnement__resto--icon i {
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+}
+
+.fonctionnement__resto--action {
+  width: 75%;
+  text-align: center;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.hearthStars {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hearthStars i:nth-child(1) {
+  position: absolute;
+  top: 15px;
+  right: 4px;
+}
+
+.hearthStars i:nth-child(2) {
+  position: absolute;
+  top: 15px;
+  right: 4px;
+  display: none;
+}
+
+.hearthStars:hover i:nth-child(1) {
+  display: none;
+}
+.hearthStars:hover i:nth-child(2) {
+  display: inline;
+  -webkit-animation: affPurpleHeart;
+          animation: affPurpleHeart;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes affPurpleHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #9356dc;
+  }
+}
+@keyframes affPurpleHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #9356dc;
+  }
+}
+
+/*  @import "/color.scss";  */
+.entréesPlatsDesserts {
+  position: relative;
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  border: 2px solid purple;
+  padding-left: 5px;
+  padding-right: 5px;
+  /*  margin-top: -70px; */
+  padding-bottom: 50px;
+  padding-top: 10px;
+  border-radius: 20px 20px 0 0;
+  gap: 50px;
+}
+
+.entréesPlatsDesserts__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.entréesPlatsDesserts__name {
+  Display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid var(--text-color-light);
+  border-radius: 14px;
+  background-color: var(--first-color);
+}
+
+.entréesPlatsDesserts__name-title {
+  font-style: italic;
+}
+
+.entréesPlatsDesserts__name-icon {
+  padding-top: 11px;
+}
+
+.Menu {
+  /* width: 65%;   */
+  padding: 15px;
+  border-radius: 14px;
+  border: 2px solid orange;
+  /* padding-bottom: 50px; */
+  /*  background-color: white; */
+}
+
+.Menu__phase-title, .result__title-affPlus {
+  /*  font-size: $font-family_LogoTitre; */
+  /*font-size: var(--h2-font-size); */
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+
+.Menu__phase-title {
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.Menu__phase-ligne {
+  border-bottom: 2px solid #99e2d0;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 25px;
+}
+
+/* contener détail du contenu du plat et prix à droite */
+.menuCard__details {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 11px; */
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  align-items: stretch;
+}
+
+/* ------------------------ */
+/*  .menuCard__details_NamePrice {
+    // background: yellow;
+    // flex-grow:1;
+  } */
+/*
+  .menuCard__details::after {
+    content:'.decalPrice';
+    padding: 11px;
+
+     display: block; 
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height:  40px;
+    background-color: $light-grey-color; 
+
+  }  */
+/*
+  .menuCard__details::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height:  40px;
+    background-color: rgb(141,172,175);
+    border-radius: 50px;
+    transition: all .4s ease-out;
+
+
+}
+*/
+/*
+  .menuCard::after {
+    content: 'ESSAI';
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height:  40px;
+    background-color: rgb(141,172,175);
+    border-radius: 50px;
+    transition: all .4s ease-out;
+}  */
+.Icon {
+  opacity: 0;
+  color: #ffffff;
+}
+
+.menuCard:hover {
+  /* .menuCard__details_NamePrice {
+    flex-grow: 0;
+  } */
+  /*
+    .decalPrice  {
+      flex-grow:1;
+      // transform: translateX(0px);
+      transition-duration: 2s;
+      background-color: orange;
+    } */
+  /*
+     .animIcon  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height:  auto;
+      background-color:  $green-color;
+      transform: translateX(0px);
+    } */
+}
+.menuCard:hover .animIcon {
+  width: 80px;
+}
+.menuCard:hover .Icon {
+  opacity: 1;
+  transform-origin: center;
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.menuCard__details_NamePrice-subname {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*
+  .menuCard__details_NamePrice-subname {
+    // font-size: $h2-font-size; 
+      animation-name: reduceNTH1; 
+       animation-fill-mode: forwards; 
+       animation-duration: 2s;
+    // white-space: nowrap;
+    }
+*/
+/*
+.text span {
+  display:block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+.decalPrice {
+  /* position:relative; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.animIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: auto;
+  background-color: #99e2d0;
+  transition: 0.5s;
+}
+
+/* contener détail du contenu du plat  */
+.menuCard__details_NamePrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px;
+  width: 100%;
+  height: 105px;
+  overflow: hidden;
+}
+
+.menuCard__details_NamePrice-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*   
+.menuCard__details_NamePrice-subname {
+   text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+max-width: max-content; 
+    font-size: $h2-font-size; 
+}  */
+.menuCard__details_NamePrice-price {
+  padding-top: 70px;
+  padding-right: 2px;
+  margin: 0;
+  display: block;
+  /* ---------- */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 50px;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: gray;
+}
+
+/*
+@keyframes reduceNTH1 {
+
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+
+      max-width: 400px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      opacity: 1;
+  }
+
+} */
+/*
+.container_AnimRectoVerso {
+  position:relative; 
+width:auto;
+  height: 1300px;
+  border:  2px solid purple;
+
+}  */
+* .container_AnimRectoVerso {
+  position: relative;
+  width: auto;
+  height: 1300px;
+  border: 2px solid purple;
+  /* animation: affRotation;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards; */
+}
+* .Restaurant__recto img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+.affOhmyfood {
+
+  opacity: 0;
+  animation: print;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+*/
+/* animation: affRotation;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; */
+/*
+  @keyframes affRotation {
+
+    0%{
+      .Restaurant__recto{
+        transform:perspective(600px) rotateY(0deg);
+        animation: affRotation;
+      }
+
+      .Restaurants {
+        transform:perspective(600px) rotateY(180deg);
+        animation: affRotation;
+      }
+
+
+    }
+
+    100% {
+      .Restaurant__recto{
+        transform:perspective(600px) rotateY(-180deg);
+      }
+
+      .Restaurants {
+        transform:perspective(600px) rotateY(0deg);
+      }
+    }
+  }
+*/
+/*
+
+.devant {
+    transform:perspective(600px) rotate(0deg);
+} */
+.Restaurants__title, .result__title-affPlus {
+  font-size: var(--h2-font-size);
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+
+/* WRAP ALL CARDS Hebergement */
+.Restaurants__group {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+  margin-bottom: 30px;
+}
+
+/* Phase consommation Resto */
+.phaseResto .result__title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.phaseResto .ligne {
+  border-bottom: 2px solid green;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 25px;
+}
+
+/* Fin Phase consommation Resto */
+.result__title-affPlus:hover {
+  color: var(--first-color);
+  font-weight: var(--font-semibold);
+}
+
+/* -------------- */
+/* .Restaurants__group  a */
+.Restaurant__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 8px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  /* contener détail du contenu du plat  */
+}
+.Restaurant__card-image {
+  width: 100%;
+  height: 75%;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+.Restaurant__card-image img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Restaurant__card_Infos {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+  gap: 10px;
+  /* contener détail du contenu du plat  */
+}
+.Restaurant__card_Infos_detail {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 10px;
+  /*
+  i {
+      color: var(--first-color);
+    }  */
+}
+.Restaurant__card_Infos_detail-stars {
+  align-items: center;
+}
+.Restaurant__card_Infos_detail-stars i {
+  border: var(--first-color);
+}
+.Restaurant__card_Infos_detail-name {
+  font-size: 16px;
+  font-weight: bold;
+  /*  color: var(--text-color); */
+}
+.Restaurant__card_Infos_detail-price {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*
+.Restaurant__card_Infos_detail-stars-hover {
+
+  display: none;
+} */
+/*
+  .Restaurant__card_Infos_detail-stars i:hover {  
+    display: inline;
+    .Restaurant__card_Infos_detail-stars-hover {
+      display: none;
+
+      color: $purple-dark-color;
+
+    } */
+/*
+ .hearthStars {
+      // background-color: Red;
+      height: 15px;
+      width: 15px;
+      position: relative;
+      cursor: pointer;
+    }
+
+ .hearthStars i:nth-child(1) {
+     position: absolute;
+      top: 0;
+      right:0;
+
+    }
+
+ .hearthStars i:nth-child(2) {
+     position: absolute;
+      top: 0;
+      right:0;
+      display: none;
+    } 
+
+
+    .hearthStars:hover {
+
+      i:nth-child(1) {
+       display: none;
+     }
+
+     i:nth-child(2) {
+       display: inline;
+       @include PurpleHeart;
+
+     }
+
+    } 
+*/
+/*
+    .hearthStars {
+      // background-color: Red;
+      height: 15px;
+      width: 15px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hearthStars i:nth-child(1) {
+     position: absolute;
+      top: 0;
+      right:0;
+
+    }
+
+    .hearthStars i:nth-child(2) {
+     position: absolute;
+      top: 0;
+      right:0;
+      display: none;
+    } 
+
+
+
+.hearthStars:hover {
+
+  i:nth-child(1) {
+   display: none;
+  }
+
+  i:nth-child(2) {
+   display: inline;
+   @include PurpleHeart;
+ }
+} 
+
+*/
+/*
+.Restaurant__card_Infos_detail-stars:hover {
+
+  i:nth-child(1) {
+   display: none;
+ }
+
+
+ i:nth-child(2) {
+   display: inline;
+   @include PurpleHeart;
+
+ } 
+
+} */
+/* --------------------------------------------------  */
+.Restaurant__card_Infos_detail-stars {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.Restaurant__card_Infos_detail-stars i:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Restaurant__card_Infos_detail-stars i:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.Restaurant__card_Infos_detail-stars:hover i:nth-child(1) {
+  display: none;
+}
+.Restaurant__card_Infos_detail-stars:hover i:nth-child(2) {
+  display: inline;
+  -webkit-animation: affPurpleHeart;
+          animation: affPurpleHeart;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes affPurpleHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #9356dc;
+  }
+}
+
+/*
+.Restaurant__card_Infos_detail-stars:hover {
+
+  .Restaurant__card_Infos_detail-stars div:nth-child(1) {
+    display: none;
+  }
+
+  .Restaurant__card_Infos_detail-stars div:nth-child(2) {
+    display: inline;
+    color: $purple-dark-color;
+    transition-duration: 3s;
+  }
+
+} */
+/*
+.Restaurant__card_Infos_detail-stars:hover {
+
+     i:nth-child(1) {
+      display: none;
+    }
+
+    i:nth-child(2) {
+      display: inline;
+      animation: affPurpleHeart;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+  } 
+
+
+  @keyframes affPurpleHeart {
+
+    0%{
+      opacity:0;
+
+    }
+
+   100%{
+      opacity:1;
+      color: $purple-dark-color;
+    }  
+}
+*/
+/*
+
+.Restaurants .Restaurant__card:hover{
+
+  .Restaurant__card_Infos_detail-stars i:nth-child(1) {
+    display: none;
+  }  
+  .Restaurant__card_Infos_detail-stars i:nth-child(2) {
+    display: inline;
+    color: $purple-dark-color;
+  }
+
+}  */
+/*
+.Restaurants .Restaurant__card:hover {  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} */
+/* @import './restaurantMediaquery';  */
+/* .Bouton  {
+            display:block;
+            align-content: center; 
+            a {
+            width: 250px; 
+            line-height: 50px;
+            text-align:center;
+            background-color: rgb(173, 54, 186);
+            color:white;
+            border-radius: 50px;
+          }
+} */
+.button {
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 14px;
+  /* Couleur de secours pour les vieux navigateurs */
+  background-color: #9356dc;
+  background-image: linear-gradient(to bottom, #d96cda, #9356dc);
+}
+
+.button:hover {
+  /* Couleur de secours pour les vieux navigateurs */
+  background-color: #ae80e5;
+  background-image: linear-gradient(to bottom, #e495e4, #ae80e5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*===== FOOTER =====*/
+footer {
+  width: 100%;
+  /* background-color:  solid rgb(33, 32, 32) ; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 25px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.footer__Logo {
+  /* font-family:  'Shrikhand';  $font-family_LogoTitre; */
+  font-style: italic;
+  color: white;
+}
+
+.liste-items__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*
+
+#contenaire-footer  {
+  display: flex;
+  gap: 15px;
+  padding-top: 25px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}  */
+.items__footer {
+  display: flex;
+  gap: 10px;
+}
+.items__footer-Title {
+  color: white;
+}
+.items__footer-Icon {
+  color: white;
+}
+
+/* Phone 767 */
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid blue;
+  }
+  /* Section réservation */
+  .showTown {
+    border: 2px solid blue;
+    padding-bottom: 50px;
+  }
+  .Restaurant__recto {
+    display: none;
+  }
+  .Menu {
+    width: 100%;
+  }
+  .entréesPlatsDesserts__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .Menu__cardGroup {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    /* margin-bottom: 30px; */
+  }
+  .menuCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  /* Section restaurants */
+  .Restaurants {
+    border: 2px solid orange;
+    padding-bottom: 50px;
+  }
+  .Restaurants {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    background-color: #f6f6f6;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  .Restaurants {
+    background-color: #f6f6f6;
+    width: 100%;
+  }
+  .Restaurants__group {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    margin-bottom: 30px;
+  }
+  .Restaurant__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid red;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  .fonctionnement__resto-item {
+    width: 90%;
+  }
+}
+/* Tablet 991  */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+  }
+  .Accueil:hover, .filter:hover {
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  .fonctionnement__resto-item {
+    width: 45%;
+    margin: 0px;
+  }
+  .filter, .info {
+    width: 90%;
+  }
+  .Menu {
+    width: 33.3333333333%;
+    height: 630px;
+  }
+  .entréesPlatsDesserts__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+  }
+  .Menu__cardGroup {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menuCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  .Restaurant__recto, .Restaurants {
+    background-color: #f6f6f6;
+    height: 690px;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    transition: transform 1s linear;
+  }
+  .Restaurant__recto {
+    display: inline;
+    transform: perspective(1200px) rotateY(0deg);
+  }
+  .container_AnimRectoVerso {
+    position: relative;
+    width: auto;
+    height: 700px;
+  }
+  .Restaurants {
+    transform: perspective(1200px) rotateY(180deg);
+  }
+  .container_AnimRectoVerso:hover .Restaurant__recto {
+    transform: perspective(1200px) rotateY(-180deg);
+  }
+  .container_AnimRectoVerso:hover .Restaurants {
+    transform: perspective(1200px) rotateY(0deg);
+  }
+  .Restaurant__card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+}
+/* Tablet 991  */
+@media screen and (min-width: 992px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+  }
+  .Accueil:hover, .filter:hover {
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  .cont_Fonct_Rest {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .fonctionnement {
+    margin: 0px;
+    gap: 35px;
+    width: 28%;
+  }
+  .fonctionnement__resto-item {
+    width: 45%;
+    margin: 0px;
+  }
+  .fonctionnement__Actions {
+    padding: 0;
+    padding-left: 15px;
+    gap: 45px;
+  }
+  .fonctionnement__Actions {
+    row-gap: 40px;
+  }
+  .filter, .info {
+    width: 90%;
+  }
+  .Menu {
+    width: 33.3333333333%;
+    height: 630px;
+  }
+  .entréesPlatsDesserts__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+  }
+  .Menu__cardGroup {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menuCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+  .Restaurant__recto, .Restaurants {
+    background-color: #f6f6f6;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    transition: transform 2s linear;
+  }
+  .Restaurant__recto {
+    display: inline;
+    transform: perspective(1200px) rotateY(0deg);
+  }
+  .container_AnimRectoVerso {
+    position: relative;
+    width: 70%;
+    height: 700px;
+  }
+  .Restaurants {
+    transform: perspective(1200px) rotateY(180deg);
+  }
+  .container_AnimRectoVerso:hover .Restaurant__recto {
+    transform: perspective(1200px) rotateY(-180deg);
+  }
+  .container_AnimRectoVerso:hover .Restaurants {
+    transform: perspective(1200px) rotateY(0deg);
+  }
+  .Restaurant__card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  }
+}
+.header__logo-Menu {
+  justify-content: space-between;
+  /*  
+    Display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+     logo accueil et page resto */
+}
+
+/*
+@import "./menu";  
+@import "./main";
+@import "./bouton"; 
+@import "./footer";   */
+/* Les pseudos classes */
+#hov:hover {
+  background: red;
+  color: white;
+}
+
+#foc:focus {
+  background: green;
+}
+
+#act:active {
+  background: pink;
+}
+
+/*
+li:nth-child(2) {
+    background: red;
+} */
+.exBA {
+  font-size: 45px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.exBA::before {
+  content: "";
+  background: red;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.exBA::after {
+  content: "";
+  background: red;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+/* Les Propriétés */
+#couleur {
+  background: #c88291;
+}
+
+#cir {
+  background: pink;
+  width: 150px;
+  height: 150px;
+  /* border-radius: 50%; */
+  /* transform: scale(3); */
+  /* transform: translate(50px, 100px); */
+  transform: translate(0px, 0px);
+  transform: rotate(45deg);
+  transform: skew(20deg, 20deg);
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  background: cyan;
+  /* transition-property: background, transform;
+  transition-duration: 2s;
+  /* transition-delay: 2s; */
+  /* transition-timing-function: cubic-bezier(0.94, 0, 0.58, 1); */
+  transition: all 1s ease-in;
+}
+
+.box:hover {
+  background: crimson;
+  transform: rotate(45deg);
+}
+
+/* Partie Animation */
+/* 
+.boxAnim  {
+
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    background: pink;
+    border-radius: 50%;
+    animation-name: couleur;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: cubic-bezier(0.94, 0, 0.58, 1);
+
+} */
+@-webkit-keyframes couleur {
+  0% {
+    opacity: 0;
+    background: pink;
+    transform: translateY(10px);
+  }
+  100% {
+    /*    width: 300px;
+       height: 280px;  */
+    background: #ffffff;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes couleur {
+  0% {
+    opacity: 0;
+    background: pink;
+    transform: translateY(10px);
+  }
+  100% {
+    /*    width: 300px;
+       height: 280px;  */
+    background: #ffffff;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.Menu__cardGroup .menuCard {
+  opacity: 0;
+}
+
+.Menu__cardGroup .menuCard:nth-child(1) {
+  -webkit-animation-name: couleur;
+          animation-name: couleur;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.Menu__cardGroup .menuCard:nth-child(2) {
+  -webkit-animation-name: couleur;
+          animation-name: couleur;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.Menu__cardGroup .menuCard:nth-child(3) {
+  -webkit-animation-name: couleur;
+          animation-name: couleur;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.Menu__cardGroup .menuCard:nth-child(4) {
+  -webkit-animation-name: couleur;
+          animation-name: couleur;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+/*
+
+.Menu__cardGroup {
+    flex-direction : column;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+
+} 
+
+*/
+/*
+.Menu__cardGroup .menuCard:nth-child(1) {
+    opacity: 0;
+    animation-name: couleur; 
+    animation-fill-mode: forwards; 
+    transform: translate(0px,-10px);
+    transition: all 3s ease-in;
+}    */
+/*
+.Menu__cardGroup  {
+
+//   animation-name: coulisser; 
+//   animation-duration: 10s;
+//   animation-fill-mode: forwards; 
+
+// transform: translate(0px,14px);
+// transition-delay: 2s;
+// transition-duration: 14s;
+
+
+    // transition: transform 3s ease-in;  
+}  */
+/*
+
+
+
+
+
+.Menu__cardGroup .menuCard:nth-child(3) {
+
+    opacity: 0;
+    animation-name: couleur; 
+
+    animation-fill-mode: forwards; 
+    animation-delay: 1s;
+    animation-duration: 5s;
+    // transform: translate(0px,-30px);  
+    // transition: 3s ease-in;
+    // transition: all 3s ease-in;
+
+  transition: transform 3s ease-in;  
+} */
+/* 
+.Menu__cardGroup .menuCard:nth-child(3) {
+
+    opacity: 1;
+   animation-name: couleur; 
+    animation-duration: 3s;
+    animation-fill-mode: forwards;  
+    animation-delay: 4s;  
+     transform: translate(0px,-15px);  
+  transition: transform 3s ease-in; 
+} */
+/*
+.Menu__cardGroup .menuCard:nth-child(3) {
+
+    opacity: 0;
+    animation-name: couleur; 
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards; 
+    transform: translate(0px,-10px);
+    // transition: all 3s ease-in;
+}   */
+/*   transform: scale(1);
+   transition: transform 400ms;
+   &:hover {
+       background: radial-gradient(circle at bottom,#9fb8d1 0%, #0c1753 100%);
+
+       // transform: scale(1.15);
+       transform: opacity;  
+
+ }   */
+/*  
+.Menu__cardGroup .menuCard {
+
+
+    transform: scale(1);
+    transition: transform 400ms;
+    opacity: 0;
+    &:hover { 
+        background: radial-gradient(circle at bottom,#9fb8d1 0%, #0c1753 100%);
+
+        transform: scale(1.15);
+        opacity: 1;
+  }
+}  
+*/
+/* 
+.Menu__cardGroup .menuCard {
+
+
+        transform: scale(1);
+        transition: transform 400ms;
+        opacity: 0;
+        &:hover {
+            background: radial-gradient(circle at bottom,#9fb8d1 0%, #0c1753 100%);
+
+            transform: scale(1.15);
+            opacity: 1;
+
+    }   */
+/*
+  .Menu__cardGroup:nth-child(1) {
+    background: red;
+}
+*/
+/*
+.menuCard__details {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px;
+
+  }
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES CSS */
+:root {
+  --header-height: 3.5rem;
+  /* Colors */
+  --first-color: #0065fc; /* charte color */
+  --first-color-alt: #deeafe;
+  --second-color: #000; /* noir */
+  --text-color: #404c56;
+  --text-color-light: #979da3;
+  --body-color: #fefffe;
+  --container-color: #d8d0d0; /* Gris clair    eff0f1*/
+  --footer-color: #2c2a2a; /* Gris clair    eff0f1*/
+  --defaultColor-nav-line: #d9d9d9;
+  /* Font and typography */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 20px;
+  --h3-font-size: 16px;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+  /* Font weight */
+  --font-medium: 500;
+  --font-semibold: 700;
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+  /*
+    .fa-solid  {
+      font-family: "Font Awesome 6 Free";
+      font-weight: normal;
+  } */
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+/*=====  REUSABLE =====*/
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none; /* on enlève les puces */
+}
+
+main {
+  border: 2px solid orangered;
+}/*# sourceMappingURL=SStyleScssACCUEIL _FactoSCSS.css.map */
