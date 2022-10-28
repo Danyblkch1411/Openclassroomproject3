@@ -1,0 +1,68 @@
+
+
+@mixin title-style { 
+    margin: 0 0 20px 0;
+    font-family: $font-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+   }
+  
+  
+   @mixin PurpleHeart {
+  
+    animation: affPurpleHeart;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  
+  
+    @keyframes affPurpleHeart {
+  
+      0%{
+        opacity:0;
+  
+      }
+      
+     100%{
+        opacity:1;
+        color: $purple-dark-color;
+      }  
+  } 
+  
+  } 
+  
+  
+  .hearthStars {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  cursor: pointer;
+  }
+  
+  .hearthStars i:nth-child(1) {
+  position: absolute;
+  top: 15px;
+  right:4px;
+  
+  }
+  
+  .hearthStars i:nth-child(2) {
+  position: absolute;
+  top: 15px;
+  right:4px;
+  display: none;
+  } 
+  
+  
+  
+  .hearthStars:hover {
+  
+  i:nth-child(1) {
+  display: none;
+  }
+  
+  i:nth-child(2) {
+  display: inline;
+  @include PurpleHeart;
+  }
+  } 
