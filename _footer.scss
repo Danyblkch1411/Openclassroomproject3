@@ -17,7 +17,9 @@ footer {
   .footer__Logo {
    /* font-family:  'Shrikhand';  $font-family_LogoTitre; */
     font-style: italic;
+    font-size: 1.5em;
     color: white;
+
   }
   
   .liste-items__footer  {
@@ -32,7 +34,7 @@ footer {
     gap: 10px;
   
           &-Title { 
-            color: white;
+            color: $grey-text-color;
           }
     
           &-Icon  {

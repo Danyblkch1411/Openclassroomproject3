@@ -7,7 +7,9 @@
     align-items: flex-start;
     gap: 15px;
     padding : 10px;
-    margin: 25px;
+    padding-bottom : 45px;
+    // margin: 25px;
+    background-color: $white-color;
 
         &__Title {
           font-size: var(--h2-font-size);
@@ -20,6 +22,8 @@
           column-gap: 40px;
           row-gap: 15px;
           width: 100%;
+          padding-left: 11px;
+          padding-right: 11px;
 
           li:hover {
             background-color: $light_purple-color;
@@ -31,9 +35,17 @@
 
         }
 
+    /*    &__resto-item {
+          position: absolute;
+          min-width: max-content;
+          padding: 8px;
+         }  */
+
+         
     &__resto-item--icon {
      padding: 10px;
       border-radius: 50%;
+ 
     }
 
 
@@ -44,6 +56,10 @@
     padding: 10px;
     border-radius: 50%;
     color:  white;
+    position: relative; /* par rapport à filter__menu-item */
+    top: -2px;          /* remonte de 2px par rapport à filter__menu-item */
+    left: -4px;         /* retrait de 4px gauche par rapport à filter__menu-item */
+   
   }
 
   &__resto--Icons {

@@ -9,6 +9,7 @@ header {
   
     display: flex;
     justify-content: space-between; 
+    background-color: $white-color;
 
   }
 
@@ -38,12 +39,40 @@ header {
 
 
 
-  .header__image-resto {
+  .header__image-restoAlaFrancaise {
     width: 100%;
     height: 350px;
     background-size: cover;
     background-image: url("./Image/A_la_francaise.jpg");
   }
+  
+  
+  .header__image-restoDelice {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-image: url("./Image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+   // /home/danyubuntu/SAVE/Cours Html/Projet3/Image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg
+  } 
+ 
+ 
+  .header__image-restoNoteEnchantee {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-image: url("./Image/stil-u2Lp8tXIcjw-unsplash.jpg");
+    // /home/danyubuntu/SAVE/Cours Html/Projet3/Image/stil-u2Lp8tXIcjw-unsplash.jpg
+  }
+  
+   
+  .header__image-restoPaletteDuGout {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-image: url("./Image/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  //  /home/danyubuntu/SAVE/Cours Html/Projet3/Image/jay-wennington-N_Y88TWmGwA-unsplash.jpg
+  }
+  
   
   header a {
     padding-top: 10px;

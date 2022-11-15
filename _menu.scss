@@ -80,7 +80,7 @@ padding-top: 11px;
   
   .Menu__phase-ligne
   {
-    //  border-bottom: 2px solid $green-color;
+    border-bottom: 2px solid $green-color;
      width: 60px; 
      height: 2px;
      margin-bottom: 25px;
@@ -104,6 +104,9 @@ padding-top: 11px;
 .Icon{
   opacity:0;
   color:  $white-color;
+  /* width: 50%;
+   height: 50%; */
+
 } 
 
 .menuCard:hover {
