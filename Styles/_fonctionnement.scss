@@ -1,0 +1,113 @@
+
+
+.fonctionnement{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding : 10px;
+    padding-bottom : 45px;
+    // margin: 25px;
+    background-color: $white-color;
+
+        &__Title {
+          font-size: var(--h2-font-size);
+        }
+
+        /* Liste Ul */
+        &__Actions {
+          display: flex;
+          flex-direction: column;
+          column-gap: 40px;
+          row-gap: 15px;
+          width: 100%;
+          padding-left: 11px;
+          padding-right: 11px;
+
+          li:hover {
+            background-color: $light_purple-color;
+            .fonctionnement__resto-item--icon {
+                color: $purple-dark-color;
+             }
+      
+           }
+
+        }
+
+         
+    &__resto-item--icon {
+     padding: 10px;
+      border-radius: 50%;
+ 
+    }
+
+
+
+
+    &__resto-item--iconNumber {
+    background-color: $purple-dark-color ;
+    padding: 10px;
+    border-radius: 50%;
+    color:  white;
+    position: relative; /* par rapport à filter__menu-item */
+    top: -2px;          /* remonte de 2px par rapport à filter__menu-item */
+    left: -4px;         /* retrait de 4px gauche par rapport à filter__menu-item */
+   
+  }
+
+  &__resto--Icons {
+      display: flex;
+      gap: 10px; 
+  } 
+
+  &__resto--Icons:nth-child(1) {
+
+      margin-left: -20px;
+  }
+ 
+}
+
+
+/* ====================================================== */
+
+
+
+
+.fonctionnement__Actions-item {
+    display: flex;
+    align-items: baseline;
+     width: auto; 
+      padding: 8px;
+      border: 1px solid var(--text-color-light);
+     border-radius: 14px; 
+     gap: 10px;
+     background-color: $light-grey-color;
+
+    }
+
+    /* Positionnement de l'icone par rapport au texte li */
+    .fonctionnement__resto--icon {
+      background-color: var(--first-color-alt);
+      padding: 10px;
+      border-radius: 50%;
+      width: max-content;
+      display: inline; /* supprime le renvoi à la ligne balise div */
+    }
+    
+
+    .fonctionnement__resto--icon i {
+      font-size: var(--normal-font-size);
+      color: var(--first-color);
+    }
+    
+
+    .fonctionnement__resto--action  {
+      width: 75%;
+      text-align: center;
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-semibold);
+    }
+    
+    
+  

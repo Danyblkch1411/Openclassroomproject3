@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;1,200&display=swap');
+ 
+@import './mixin';
+@import './color';
+ @import './police';  
+ @import './loader'; 
+ @import './header';
+ @import './accueil';
+ @import './fonctionnement';
+/*  @import './main'; */
+@import './menu';
+@import './restaurants';
+/* @import './restaurantMediaquery';  */
+@import './bouton';
+@import './footer'; 
+@import './Screen767';
+// @import './Screen991avecRotation';
+// @import './Screen992avecRotation';   
+ @import './Screen991'; 
+ @import './Screen992'; 
+    
+
+/*  */
+
+
+
+
+
+
+/* import mainMenu.css Restaurants ----------------------------------------------------------------- */
+
+/*
+ 
+ @import './color.scss';
+ @import "./police.scss";
+ @import "./headerMenu.scss"; 
+ @import "./menu.scss";  
+ @import "./footer.scss"; 
+ */
+ 
+ /*
+ @import './color';
+ @import "./police"; */
+ @import "./headerMenu"; 
+ /*
+ @import "./menu";  
+ @import "./main";
+ @import "./bouton"; 
+ @import "./footer";   */
+ @import "./MenuAnimation";
+ /*
+ @import './Screen767';
+ @import './Screen991';
+ @import './Screen992'; */
+ 
+ 
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+   }
+  
+   
+  
+ 
+   body {
+     font-family: $font_family; 
+     overflow-x: hidden;
+   }
+ 
+   
+ /* VARIABLES CSS */
+ :root {
+ 
+     /* test mixin */
+     
+     $font-serif: Jubilat, Georgia, serif; 
+     
+       @mixin title-style { 
+         margin: 0 0 20px 0;
+         font-family: $font-serif; 
+         font-size: 20px; 
+         font-weight: bold; 
+         text-transform: uppercase;
+        }
+    /* 
+        h1 { 
+           @include title-style;
+        }  */
+     
+   
+ 
+     }
+     
+     /*=====  REUSABLE =====*/
+ a {
+     // cursor: pointer;
+     color: var(--text-color);
+     text-decoration: none;
+   }
+   
+   
+ 
+ 
+ 
+   
+   ul {
+     list-style: none; /* on enlève les puces */
+   }
+ 
+ 
+   .cont_Fonct_Rest {
+     display: flex;
+     gap: 25px;
+     flex-direction: column;
+     align-items: center;
+ 
+   } 
+ 
+ .Menu__cardGroup {
+     display: flex;
+   /*  width: 100%; */
+     gap: 25px;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-bottom: 30px;
+   } 
+ 
+ 
+/* FIN import mainMenu.css Restaurants ----------------------------------------------------------------- */
+
+
+

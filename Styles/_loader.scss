@@ -1,0 +1,78 @@
+
+/*  !!!!!!!!!!!!! */
+body {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  !!!!!!!!!!!!! */
+
+.containerLoader {
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+}
+
+.itemLoader {
+  max-width: max-content;
+  height: max-content;
+  border-radius: 50%;
+  // background:  #000;
+  margin: 10px;
+}
+
+
+.item1 {
+  background-color: $primary-color;
+   animation: loader 20 0.3s alternate;
+
+}
+
+
+.item2 {
+  background-color: $secondary-color;
+    animation: loader 20 0.3s 0.05s alternate;
+
+}
+.item3 {
+  background-color: $third-color;
+  animation: loader 15 0.3s 0.1s alternate;
+
+}
+
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px)
+  }
+}
+
+/*  !!!!!!!!!!!!! */
+
+.affOhmyfood {
+
+  opacity: 0;
+  animation: print;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+} 
+
+
+
+
+
+
+@keyframes print {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

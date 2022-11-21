@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;1,200&display=swap');
+
+/*
+@import '.Styles/color';
+ @import '.Styles/police';  
+ @import '.Stylesloader'; 
+ @import '.Styles/header';
+ @import '.Styles/accueil';
+ @import '.Styles/fonctionnement';
+ @import '.Styles/Coeurs';  
+@import '.Styles/menu';
+@import '.Styles/restaurants';
+@import '.Styles/bouton';
+@import '.Styles/footer'; 
+@import '.Styles/Screen767';  
+ @import '.Styles/Screen991'; 
+ @import '.Styles/Screen992'; 
+ @import ".Styles/headerMenu"; 
+ @import ".Styles/MenuAnimation";
+
+*/
+
+@import './color';
+ @import './police';  
+ @import './loader'; 
+ @import './header';
+ @import './accueil';
+ @import './fonctionnement';
+ @import './Coeurs';  
+@import './menu';
+@import './restaurants';
+@import './bouton';
+@import './footer'; 
+@import './Screen767';  
+ @import './Screen991'; 
+ @import './Screen992'; 
+ @import "./headerMenu"; 
+ @import "./MenuAnimation";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* VARIABLES CSS */
+:root {
+  --header-height: 3.5rem;
+
+  
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+
+/*=====  REUSABLE =====*/
+a {
+  // cursor: pointer;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+
+
+ul {
+  list-style: none; /* on enlève les puces */
+}
+
+
+
+
+
+
