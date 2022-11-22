@@ -167,6 +167,9 @@ padding-top: 11px;
 
 
 .menuCard__details_NamePrice-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: $h2-font-size; 
   font-weight: bold;
 }

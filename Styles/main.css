@@ -512,6 +512,9 @@ header a {
 }
 
 .menuCard__details_NamePrice-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 20px;
   font-weight: bold;
 }
@@ -1009,7 +1012,6 @@ footer {
 @-webkit-keyframes couleur {
   0% {
     opacity: 0;
-    background: pink;
     transform: translateY(10px);
   }
   100% {
@@ -1022,7 +1024,6 @@ footer {
 @keyframes couleur {
   0% {
     opacity: 0;
-    background: pink;
     transform: translateY(10px);
   }
   100% {
