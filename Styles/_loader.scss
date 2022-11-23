@@ -158,6 +158,9 @@ main {
   }
   */
 
+
+
+  /*
  footer {
 
     opacity: 0;
@@ -178,4 +181,27 @@ main {
       opacity: 1;
 
     }
-    }
+    } */
+
+    .affFooter {
+
+      opacity: 0;
+      animation: printFooter;
+      animation-delay: 3s;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      } 
+      
+      @keyframes printFooter {
+      
+      0% {
+        opacity: 0;
+   
+      }
+      
+      100% {
+        opacity: 1;
+  
+      }
+      }
+  
