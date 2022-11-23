@@ -56,14 +56,57 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*  !!!!!!!!!!!!! */
+.containerLoader h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+}
+
+.containerLoader h1 {
+  display: inline-block;
+}
+
 .containerLoader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  gap: 15px;
+  opacity: 1;
+  -webkit-animation: effLoader;
+          animation: effLoader;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes effLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes effLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.cont_itemLoader {
+  display: flex;
 }
 
 .itemLoader {
@@ -106,8 +149,7 @@ body {
     transform: translateY(-30px);
   }
 }
-/*  !!!!!!!!!!!!! */
-.affOhmyfood {
+header {
   opacity: 0;
   -webkit-animation: print;
           animation: print;
@@ -129,6 +171,87 @@ body {
 }
 
 @keyframes print {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.affMain {
+  opacity: 0;
+  -webkit-animation: printMain;
+          animation: printMain;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes printMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes printMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+
+
+main {
+
+  opacity: 0;
+  animation: printMain;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  } 
+
+  @keyframes printMain {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  }
+  */
+footer {
+  opacity: 0;
+  -webkit-animation: printFooter;
+          animation: printFooter;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes printFooter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes printFooter {
   0% {
     opacity: 0;
   }
@@ -420,6 +543,11 @@ header a {
   background-color: var(--first-color);
 }
 
+.entréesPlatsDesserts__name h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+}
+
 .entréesPlatsDesserts__name-title {
   font-style: italic;
 }
@@ -696,6 +824,11 @@ header a {
 }
 
 /*===== FOOTER =====*/
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+}
+
 footer {
   width: 100%;
   /* background-color:  solid rgb(33, 32, 32) ; */

@@ -35,7 +35,10 @@ background-color: $light-grey-color;
   background-color: var(--first-color);
 }
 
-
+.entréesPlatsDesserts__name  h2 { 
+  font-family: $font-family_LogoTitre;
+  font-weight: bold;  
+} 
 
 .entréesPlatsDesserts__name-title {
  
